@@ -12,7 +12,7 @@ npm install
 ```
 ng serve --host 0.0.0.0
 ```
-4. Acessar o link: https://<ip-maquina-host>:4200
+4. Acessar o link: https://ip-maquina-host:4200
 
 # Informações adicionais de Angular
 
