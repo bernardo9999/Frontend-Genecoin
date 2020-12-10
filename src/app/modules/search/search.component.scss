@@ -1,0 +1,148 @@
+/* APPEARANCE STYLES*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+.container-outside {
+    display: flex;
+    height: 85vh;
+    flex-direction: row;
+}
+
+.outside-box-1 {
+    padding: 10px;
+    text-align: center;
+    font-family: lato;
+    font-weight: 300;
+    width: 50%;
+}
+
+.box-1 {
+    background: #d4dce4;
+}
+
+.container-inside-1 {
+    display: flex;
+    border: 3px solid #141c24;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inside-1-box {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: lato;
+    font-weight: 300;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.box-inside-1 {
+    font-size: 50px;
+    color: black;
+    background: #d4dce4;
+    text-align: center;
+    font-family: lato;
+    font-weight: bold;
+    align-self: stretch;
+    padding-top: 80px
+}
+
+.mat-divider {
+    border-top-color: #FFC000;
+    border-top-width: 4px;
+    border-top-style: solid;
+    width: 400px;
+    margin: auto
+}
+
+.container-inside-1>p {
+    font-size: 25px;
+    color: #767171;
+    font-weight: bold;
+}
+
+.box-inside-2 {
+    font-size: 20px;
+    color: black;
+    background: #d4dce4;
+    text-align: center;
+    font-family: lato;
+    font-weight: 500;
+}
+
+.datepicker1 {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.datepicker2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.box-inside-3 {
+    font-size: 50px;
+    color: black;
+    background: #d4dce4;
+    text-align: center;
+    font-family: lato;
+    font-weight: 500;
+}
+
+.mat-raised-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 60px;
+    margin: 40px;
+    font-family: lato;
+    font-weight: 1000;
+}
+
+.outside-box-2 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: lato;
+    font-weight: 300;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.box-2 {
+    background: #d4dce4;
+}
+
+.container-inside-2 {
+    display: flex;
+    height: 85vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-2-box {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: lato;
+    font-weight: 300;
+    width: 100%;
+}
+
+.box-inside-4 {
+    background: #d4dce4;
+}
+
+.image {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}

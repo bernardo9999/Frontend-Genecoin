@@ -1,0 +1,10 @@
+<div>
+    {{data.type | titlecase}}
+</div>
+<div class="message">
+    <mat-icon>verified</mat-icon>
+    {{data.message}}
+</div>
+<div style="text-align: center;">
+    <button mat-flat-button (click)="snackBarRef.dismiss()">{{data.buttonText}}</button>
+</div>

@@ -1,0 +1,46 @@
+<section class="container-outside">
+    <div class="outside-box-1 box-1">
+        <div class="user">
+            <button mat-button [matMenuTriggerFor]="menu">
+                <mat-icon>person_outline</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="onSelectUser('fornecedor')">
+                    <mat-icon class="user-select">assignment_ind</mat-icon>
+                    Fornecedor
+                </button>
+                <button mat-menu-item (click)="onSelectUser('comprador')">
+                    <mat-icon class="user-select">assignment_ind</mat-icon>
+                    Comprador
+                </button>
+            </mat-menu>
+            <!-- <span class="span">usuario</span> -->
+        </div>
+        <section class="container-inside-1">
+            <div class="inside-1-box box-inside-1">Registro de Nota Fiscal</div>
+            <div class="inside-1-box box-inside-2">
+                <p>Selecione um usuário e escolha um arquivo para gravar no Blockchain!</p>
+                <div class="dropzone" dropzone (hovered)="toggleHover($event)" (dropped)="onDrop($event)" [class.hovering]="isHovering">
+                    <p class="paragraph-dropzone">Drop Zone</p>
+                    <p class="paragraph-file">Faça o upload dos seus arquivos</p>
+                    <label class="file-label">
+                        <input class="paragraph-file" type="file" (change)="onDrop($event.target.files)">
+                    </label>
+                </div>
+                <br>
+                <span>{{"Arquivos a carregar:  "}}{{files.length}}</span>
+            </div>
+            <div *ngFor="let file of files"> </div>
+            <div class="inside-1-box box-inside-3">
+                <button mat-raised-button color="primary" (click)="onDropUpload(files)">Inserir</button>
+            </div>
+        </section>
+    </div>
+    <div class="outside-box-2 box-2">
+        <section class="container-inside-2">
+            <div class="inside-2-box box-inside-4">
+                <img class="image" src="../../../assets/img/genecoin-rgb_vertical-reverse.png" alt="">
+            </div>
+        </section>
+    </div>
+</section>

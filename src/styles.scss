@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.success.mat-snack-bar-container {
+    background: lightgreen;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: lato;
+}
+
+.error.mat-snack-bar-container {
+    background: #cc0000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: lato;
+}
+
+.upload.mat-snack-bar-container {
+    background: #FFC000;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: lato;
+}

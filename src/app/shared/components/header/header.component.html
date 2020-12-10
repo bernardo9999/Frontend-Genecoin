@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+
+        <span class="span">Sistema de Auditoria Operacional</span>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul class="none" fxLayout="row" fxLayoutGap="100px">
+                <li>
+                    <button mat-icon-button>
+                        <a mat-list-item [routerLink]="['/']" fxFlex fxLayout="row" fxLayoutAlign="center">
+                            <mat-icon>home</mat-icon>
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <a mat-list-item [routerLink]="['/upload']" fxFlex fxLayout="row" fxLayoutAlign="center">
+                            <mat-icon>backup</mat-icon>
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <a mat-list-item [routerLink]="['/search']" routerLinkActive="list-item-active" fxFlex fxLayout="row" fxLayoutAlign="center">
+                            <mat-icon>search</mat-icon>
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
